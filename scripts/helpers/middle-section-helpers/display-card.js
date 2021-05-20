@@ -28,7 +28,7 @@ export function displayCardsFunc(dropdownCount,selectedIcon,selectedArray){
                 <li><img src="assets/weather-icon/precipitationIcon.svg"><span style="font-weight: lighter;">${selectedArray[j].precipitation}</span></li>
             </ul>
             <div >
-                <img class="box_icon" src="assets/city-icon/${selectedArray[j].cityName}.svg"/>
+                <img class="box_icon" src="assets/city-icon/${selectedArray[j].cityName.toLocaleLowerCase()}.svg"/>
             </div>
         </div>`;
     }

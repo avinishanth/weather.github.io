@@ -36,7 +36,7 @@ cityRef.addEventListener("change",async (event) => {
 
     if(indexRef in weatherData)
     {
-        cityIconRef.src = `assets/city-icon/${selectedCity}.svg`;      
+        cityIconRef.src = `assets/city-icon/${selectedCity.toLocaleLowerCase()}.svg`;      
         const dateAndTimeRef = weather.dateAndTime;  
 
         /** to make the timer run
@@ -50,8 +50,9 @@ cityRef.addEventListener("change",async (event) => {
         */
         dateRef.innerText = dateFunc(dateAndTimeRef);                                         
 
-        const amPmRef = dateAndTimeRef.split(" ")[2];                     
-        amPmIconRef.src = `assets/time-icons/${amPmRef}State.svg`;
+        const amPmRef = dateAndTimeRef.split(" ")[2];    
+        console.log(amPmRef.toLocaleLowerCase());
+        amPmIconRef.src = `assets/time-icons/${amPmRef.toLocaleLowerCase()}State.svg`;
 
         const tempWeatherInfo = weather.temperature;                                         
         const humidityWeatherInfo = weather.humidity;
