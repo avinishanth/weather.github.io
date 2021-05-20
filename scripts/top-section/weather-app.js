@@ -3,7 +3,7 @@ import {timerFunc} from '/scripts/helpers/top-section-helpers/timer.js';
 import {dateFunc} from '/scripts/helpers/mutual-helpers/date.js';
 import {temperatureFunc} from '/scripts/helpers/top-section-helpers/temperature.js';
 import {weatherFlexFunc} from '/scripts/helpers/top-section-helpers/weather-flex.js';
-import {CityObj} from '/scripts/helpers/mutual-helpers/prototype.js';
+import {CityObj} from '/scripts/helpers/mutual-helpers/proto.js';
 import {weatherInfoRef,fiveHoursInfo} from '/weather-data/request.js';
 
 const cityRef = document.querySelector("#city_dropdown");
